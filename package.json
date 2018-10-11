@@ -1,0 +1,25 @@
+{
+  "name": "koa-practise",
+  "version": "1.0.0",
+  "description": "koa practise",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangditxz/koa-practise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.5.3",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0"
+  },
+  "bugs": {
+    "url": "https://github.com/wangditxz/koa-practise/issues"
+  },
+  "homepage": "https://github.com/wangditxz/koa-practise#readme"
+}
