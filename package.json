@@ -16,7 +16,9 @@
   "dependencies": {
     "koa": "^2.5.3",
     "koa-bodyparser": "^4.2.1",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "mysql2": "^1.6.1",
+    "sequelize": "^4.39.0"
   },
   "bugs": {
     "url": "https://github.com/wangditxz/koa-practise/issues"
