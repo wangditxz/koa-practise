@@ -10,5 +10,7 @@ module.exports = (sequelize, DataTypes) => {
         createdAt: DataTypes.BIGINT,
         updatedAt: DataTypes.BIGINT,
         version: DataTypes.BIGINT
+    }, {
+        timestamps: false
     });
 };
