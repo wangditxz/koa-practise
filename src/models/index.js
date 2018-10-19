@@ -24,6 +24,7 @@ var sequelize = new Sequelize(
  * 导入模型
  */
 let Pet = sequelize.import('./Pet.js');
+let User = sequelize.import('./User.js');
 /**
  * 同步模型到数据库
  */
@@ -39,5 +40,6 @@ ${JSON.stringify(sequelize.models, null, 4)}
 module.exports = {
     sequelize,
     Sequelize,
-    Pet
+    Pet,
+    User
 }

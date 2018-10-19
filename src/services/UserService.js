@@ -1,4 +1,23 @@
-const { Pet } = require('../models');
+const { Pet, User } = require('../models');
+
+
+const saveUser = async params => {
+    const user = new User();
+    const { username, password } = params;
+
+    user.username = username;
+    user.password = password;
+  
+    return user.save();
+};
+const getUser = async username => {
+    if (!username) {
+        throw new Error('param should include username!');
+    }
+    const user = await User.findOne({ where: { username }});
+    return user;
+}
+
 
 let registerPet = async params => {
     const now = Date.now();
@@ -17,7 +36,9 @@ let registerPet = async params => {
 };
 
 module.exports = {
-    registerPet
+    registerPet,
+    saveUser,
+    getUser
 };
 // const now = Date.now();
 // makedog = async () => {
